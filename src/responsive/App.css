@@ -31,10 +31,13 @@
 .form-child > form {
     display: flex;
     flex-direction: column;
-    width: 20rem;
-    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 25rem;
+    height: 33vh;
     margin-top: 10rem;
-    padding: 6px;
+    background-color: #f7f7f7;
 }
 
 h2 {
@@ -46,23 +49,74 @@ input::placeholder {
     color: #f7f7f7;
 }
 
-form > input {
-    height: 3.5rem;
-    margin-bottom: 10px;
+.email-div > input:focus,
+.revealPass > input:focus {
+    border: none;
+    outline: none;
+}
+
+.email-div > input {
+    border-radius: 5px;
+}
+
+.revealPass > input {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.revealPass > label {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.email-div > input {
+    width: 20.5rem;
+    height: 2.5rem;
+    margin: 6px 0 6px 0px;
     text-indent: 5px;
-    border-radius: 20px;
     background-color: #611bf8;
     font-size: 1.2rem;
     border: none;
 }
 
 form > button {
-    height: 3rem;
-    margin-top: 1.5rem;
-    border-radius: 10px;
+    height: 2.6rem;
+    width: 15rem;
+    margin-top: 2rem;
+    border-radius: 5px;
     font-size: 1.1rem;
     font-weight: 700;
     border: none;
-    background-color: #580ef6;
+    background-color: #611bf8;
     cursor: pointer;
+}
+
+.revealPass {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    width: 22rem;
+}
+
+.revealPass > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-bottom: 5px;
+    background-color: #611bf8;
+}
+
+
+.revealPass > input {
+    width: 18rem;
+    height: 2.5rem;
+    margin: 6px 0 6px 12px;
+    text-indent: 5px;
+    background-color: #611bf8;
+    font-size: 1.2rem;
+    border: none;
 }
