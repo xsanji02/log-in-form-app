@@ -1,122 +1,122 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    color: #f7f7f7;
-    user-select: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #f7f7f7;
+  user-select: none;
+  font-family: "Kanit", sans-serif;
 }
 
 .form-background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #26292b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #26292b;
 }
 
 .form-parent {
-    background-color: #3d3a50;
-    height: 45vh;
-    border-radius: 15px;
+  background-color: #3d3a50;
+  height: 49vh;
+  border-radius: 15px;
 }
 
 .form-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 25vh;
-    width: 35rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  width: 35rem;
 }
 
 .form-child > form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    width: 25rem;
-    height: 33vh;
-    margin-top: 10rem;
-    background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 25rem;
+  height: 33vh;
+  margin-top: 10rem;
+  background-color: #f6f4f4;
 }
 
 h2 {
-    text-align: center;
-    margin-top: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 input::placeholder {
-    color: #f7f7f7;
+  color: #f7f7f7;
 }
 
 .email-div > input:focus,
 .revealPass > input:focus {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
 
 .email-div > input {
-    border-radius: 5px;
+  border-radius: 5px;
 }
 
 .revealPass > input {
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .revealPass > label {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .email-div > input {
-    width: 20.5rem;
-    height: 2.5rem;
-    margin: 6px 0 6px 0px;
-    text-indent: 5px;
-    background-color: #611bf8;
-    font-size: 1.2rem;
-    border: none;
+  width: 20.5rem;
+  height: 2.5rem;
+  margin: 6px 0 6px 0px;
+  text-indent: 5px;
+  background-color: #611bf8;
+  font-size: 1.2rem;
+  border: none;
 }
 
 form > button {
-    height: 2.6rem;
-    width: 15rem;
-    margin-top: 2rem;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border: none;
-    background-color: #611bf8;
-    cursor: pointer;
+  height: 2.6rem;
+  width: 13rem;
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  background-color: #611bf8;
+  cursor: pointer;
 }
 
 .revealPass {
-    display: flex;
-    align-items: center;
-    height: 3.5rem;
-    width: 22rem;
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+  width: 22rem;
 }
 
 .revealPass > label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 5px;
-    height: 2.5rem;
-    width: 2.5rem;
-    margin-bottom: 5px;
-    background-color: #611bf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-bottom: 5px;
+  background-color: #611bf8;
 }
 
-
 .revealPass > input {
-    width: 18rem;
-    height: 2.5rem;
-    margin: 6px 0 6px 12px;
-    text-indent: 5px;
-    background-color: #611bf8;
-    font-size: 1.2rem;
-    border: none;
+  width: 18rem;
+  height: 2.5rem;
+  margin: 6px 0 6px 12px;
+  text-indent: 5px;
+  background-color: #611bf8;
+  font-size: 1.2rem;
+  border: none;
 }

@@ -5,9 +5,14 @@ import { AiFillEye } from "react-icons/ai";
 
 export const Login = ({ inputChange, handleSubmit }) => {
   const [showPassword, setShowPassword] = useState(false);
+  const [showConfirmPassword, setShowConfrimPassword] = useState(false);
 
-  const showPass = (e) => {
+  const showPass = () => {
     setShowPassword((prevState) => !prevState);
+  };
+
+  const revealConfirmPassword = () => {
+    setShowConfrimPassword((showConfirmPass) => !showConfirmPass);
   };
 
   return (
@@ -16,18 +21,18 @@ export const Login = ({ inputChange, handleSubmit }) => {
       <div className="form-child">
         <form onSubmit={handleSubmit}>
           <div className="email-div">
-          <input 
-            type="email"
-            placeholder="example@email.com"
-            name="email"
-            onChange={inputChange}
-            required
-          />
+            <input
+              type="email"
+              placeholder="example@email.com"
+              name="email"
+              onChange={inputChange}
+              required
+            />
           </div>
           <div className="revealPass">
             <input
               id="showPass"
-              type="password"
+              type={showPassword ? "text" : "password"}
               placeholder="Password"
               name="pass"
               onChange={inputChange}
@@ -39,15 +44,15 @@ export const Login = ({ inputChange, handleSubmit }) => {
           </div>
           <div className="revealPass">
             <input
-              id="showPass"
-              type="password"
+              id="showConfirmPass"
+              type={showConfirmPassword ? "text" : "password"}
               placeholder="Confirm Password"
               name="confirmPass"
               onChange={inputChange}
               required
             />
-            <label htmlFor="showPass" onClick={showPass}>
-              {showPassword !== true ? <AiFillEyeInvisible /> : <AiFillEye />}
+            <label htmlFor="showConfirmPass" onClick={revealConfirmPassword}>
+              {showConfirmPassword !== true ? <AiFillEyeInvisible /> : <AiFillEye />}
             </label>
           </div>
           <button>Log in</button>

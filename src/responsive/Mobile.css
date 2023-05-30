@@ -1,133 +1,178 @@
 @media (max-width: 600px) {
+  .form-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #26292b;
+  }
 
-    .form-background {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #26292b;
-    }
-    
-    .form-parent {
-        background-color: #3d3a50;
-        height: 45vh;
-        border-radius: 15px;
-    }
-    
-    .form-child {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 25vh;
-        width: 25rem;
-    }
-    
-    .form-child > form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-        margin-top: 10rem;
-        padding: 6px;
-    }
-    
-    h2 {
-        text-align: center;
-        margin-top: 1rem;
-    }
-    
-    input::placeholder {
-        color: #f7f7f7;
-    }
-    
-    form > input {
-        height: 2rem;
-        width: 20rem;
-        margin-bottom: 10px;
-        text-indent: 5px;
-        border-radius: 20px;
-        background-color: #611bf8;
-        font-size: .6rem;
-        border: none;
-    }
-    
-    form > button {
-        height: 1.5rem;
-        width: 10rem;
-        margin-top: 1.5rem;
-        border-radius: 10px;
-        font-size: .6rem;
-        font-weight: 800;
-        border: none;
-        background-color: #580ef6;
-        cursor: pointer;
-    }
+  .form-parent {
+    background-color: #3d3a50;
+    height: 45vh;
+    border-radius: 15px;
+  }
+
+  .form-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25vh;
+    width: 25rem;
+  }
+
+  .form-child > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 22rem;
+    height: 31.5vh;
+    margin-top: 8.5rem;
+    background-color: #f7f7f7;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  input::placeholder {
+    color: #f7f7f7;
+    font-size: 0.9rem;
+  }
+
+  .email-div > input {
+    width: 19.2rem;
+    height: 2.5rem;
+    margin: 6px 0 6px 0px;
+    text-indent: 5px;
+    background-color: #611bf8;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .revealPass > input {
+    width: 16rem;
+    height: 2.5rem;
+    margin: 6px 0 6px 22px;
+    text-indent: 5px;
+    background-color: #611bf8;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .revealPass > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 2.5rem;
+    width: 3.23rem;
+    margin-bottom: 5px;
+    background-color: #611bf8;
+  }
+
+  form > button {
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    font-weight: 800;
+    border: none;
+    background-color: #580ef6;
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 400px) {
+  .form-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #26292b;
+  }
 
-    .form-background {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #26292b;
-    }
-    
-    .form-parent {
-        background-color: #3d3a50;
-        height: 45vh;
-        width: 20rem;
-        border-radius: 15px;
-    }
-    
-    .form-child {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 18vh;
-        width: 20rem;
-    }
-    
-    .form-child > form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-        margin-top: 8.5rem;
-    }
-    
-    h2 {
-        text-align: center;
-        margin-top: 1rem;
-    }
-    
-    input::placeholder {
-        color: #f7f7f7;
-    }
-    
-    form > input {
-        height: 2.2rem;
-        width: 16rem;
-        margin-bottom: 10px;
-        text-indent: 5px;
-        border-radius: 20px;
-        background-color: #611bf8;
-        font-size: .6rem;
-        border: none;
-    }
-    
-    form > button {
-        height: 2.1rem;
-        width: 10rem;
-        margin-top: 1rem;
-        border-radius: 10px;
-        font-size: .6rem;
-        font-weight: 800;
-        border: none;
-        background-color: #580ef6;
-        cursor: pointer;
-    }
+  .form-parent {
+    background-color: #3d3a50;
+    height: 48vh;
+    width: 20rem;
+    border-radius: 15px;
+  }
+
+  .form-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    width: 20rem;
+  }
+
+  .form-child > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 34vh;
+    width: 18rem;
+    margin-top: 13.5rem;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  input::placeholder {
+    color: #f7f7f7;
+    font-size: 0.85rem;
+  }
+
+  .email-div > input {
+    width: 16rem;
+    height: 2.5rem;
+    margin: 6px 0 6px 0px;
+    text-indent: 5px;
+    background-color: #611bf8;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .revealPass > input {
+    width: 13rem;
+    height: 2.5rem;
+    margin: 6px 0 6px 3rem;
+    text-indent: 5px;
+    background-color: #611bf8;
+    font-size: 1rem;
+    border: none;
+  }
+
+  .revealPass > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 5px;
+    height: 2.5rem;
+    width: 3rem;
+    margin-bottom: 5px;
+    background-color: #611bf8;
+  }
+
+  form > button {
+    height: 2.1rem;
+    width: 8rem;
+    margin-top: 1.5rem;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 800;
+    border: none;
+    background-color: #580ef6;
+    cursor: pointer;
+  }
 }
