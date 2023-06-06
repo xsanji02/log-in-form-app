@@ -3,12 +3,12 @@ import "./responsive/Mobile.css";
 import { AiFillEyeInvisible } from "react-icons/ai";
 import { AiFillEye } from "react-icons/ai";
 
-export const Login = ({ inputChange, handleSubmit }) => {
+export const Login = ({ inputChange, handleSubmit}) => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfrimPassword] = useState(false);
 
   const showPass = () => {
-    setShowPassword((prevState) => !prevState);
+    setShowPassword((showPassword) => !showPassword);
   };
 
   const revealConfirmPassword = () => {
@@ -33,7 +33,7 @@ export const Login = ({ inputChange, handleSubmit }) => {
             <input
               id="showPass"
               type={showPassword ? "text" : "password"}
-              placeholder="Password"
+              placeholder="**********"
               name="pass"
               onChange={inputChange}
               required
@@ -46,13 +46,17 @@ export const Login = ({ inputChange, handleSubmit }) => {
             <input
               id="showConfirmPass"
               type={showConfirmPassword ? "text" : "password"}
-              placeholder="Confirm Password"
+              placeholder="*********"
               name="confirmPass"
               onChange={inputChange}
               required
             />
             <label htmlFor="showConfirmPass" onClick={revealConfirmPassword}>
-              {showConfirmPassword !== true ? <AiFillEyeInvisible /> : <AiFillEye />}
+              {showConfirmPassword !== true ? (
+                <AiFillEyeInvisible />
+              ) : (
+                <AiFillEye />
+              )}
             </label>
           </div>
           <button>Log in</button>

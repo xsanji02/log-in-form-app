@@ -40,7 +40,7 @@
 
   input::placeholder {
     color: #f7f7f7;
-    font-size: 0.9rem;
+    font-size: 0.83rem;
   }
 
   .email-div > input {
@@ -99,7 +99,7 @@
 
   .form-parent {
     background-color: #3d3a50;
-    height: 48vh;
+    height: 50vh;
     width: 20rem;
     border-radius: 15px;
   }
@@ -129,7 +129,7 @@
 
   input::placeholder {
     color: #f7f7f7;
-    font-size: 0.85rem;
+    font-size: 0.7rem;
   }
 
   .email-div > input {
