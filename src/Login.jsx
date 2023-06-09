@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./responsive/Mobile.css";
-import { AiFillEyeInvisible } from "react-icons/ai";
-import { AiFillEye } from "react-icons/ai";
+import { AiFillEyeInvisible, AiFillEye } from "react-icons/ai";
 
 export const Login = ({ inputChange, handleSubmit}) => {
   const [showPassword, setShowPassword] = useState(false);
